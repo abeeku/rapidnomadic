@@ -1,0 +1,266 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: 'Roboto Condensed';
+  color:white;
+  font-size: 26px;
+}
+h2 {
+  font-family: 'Roboto Condensed';
+  color:white;
+}
+body {
+  background-color:#019AD2;
+}
+#regist {
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px;
+  background: #fff;
+  background: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#fff),color-stop(100%,#ddd));
+  background: -webkit-linear-gradient(top,#fff 0,#ddd 100%);
+  background: -moz-linear-gradient(top,#fff 0,#ddd 100%);
+  background: -ms-linear-gradient(top,#fff 0,#ddd 100%);
+  background: -o-linear-gradient(top,#fff 0,#ddd 100%);
+  background: linear-gradient(top,#fff 0,#ddd 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff',endColorstr='#dddddd',GradientType=0);
+  border-left: solid 1px #eee;
+  border-right: solid 1px #eee;
+  border-bottom: solid 1px #ccc;
+  -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  -moz-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  box-shadow: 0 1px 0 rgba(0,0,0,.1);
+  width: 400px;
+  height: auto;
+  input[type="text"]:hover, input[type="password"]:hover, select:hover , input[type="email"]:hover {
+    border: 2px solid #000099;
+  }
+  input[type="text"], input[type="password"] , input[type="email"], select  {
+    font-family:Verdana, Geneva, sans-serif;
+    border: 1px solid #000;
+    font-size:16px;
+    border-radius:4px;
+  }
+  input[type="text"]:focus, input[type="password"]:focus, select:focus , input[type="email"]:focus  {
+     background-color:#333;
+     color:#FFF;
+   }
+  input[type ="submit"] {
+    position: relative;
+    display: inline-block;
+    overflow: visible;
+    padding: 5px 10px;
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+    color: #333;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    background-color: #CCC;
+    background-repeat: no-repeat;
+    border: 1px solid #CCC;
+    cursor: pointer;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    -moz-box-shadow: 0 1px 0 rgba(255,255,255,.5);
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+    text-decoration: none !important;
+    margin-top: 15px;
+    margin-left: 5px;
+    color: white !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .25);
+    background-color: #019AD2;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear,left top,left bottom,from(#33BCEF),to(#019AD2));
+    background-image: -moz-linear-gradient(#33BCEF,#019AD2);
+    background-image: -ms-linear-gradient(#33BCEF,#019AD2);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#33BCEF),color-stop(100%,#019AD2));
+    background-image: -webkit-linear-gradient(#33BCEF,#019AD2);
+    background-image: -o-linear-gradient(#33BCEF,#019AD2);
+    background-image: linear-gradient(#33BCEF,#019AD2);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bcef',endColorstr='#019ad2',GradientType=0);
+    border-color: #057ED0 !important;
+    -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+    -moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.1);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+
+  }
+  input[type="submit"]:hover {
+    color: white !important;
+    background-color: #0271BF;
+    background-repeat: repeat-x;
+    background-image: -khtml-gradient(linear,left top,left bottom,from(#2DADDC),to(#0271BF));
+    background-image: -moz-linear-gradient(#2DADDC,#0271BF);
+    background-image: -ms-linear-gradient(#2DADDC,#0271BF);
+    background-image: -webkit-gradient(linear,left top,left bottom,color-stop(0%,#2DADDC),color-stop(100%,#0271BF));
+    background-image: -webkit-linear-gradient(#2DADDC,#0271BF);
+    background-image: -o-linear-gradient(#2DADDC,#0271BF);
+    background-image: linear-gradient(#2DADDC,#0271BF);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#2daddc',endColorstr='#0271bf',GradientType=0);
+    border-color: #096EB3 !important;
+  }
+}
+
+p {
+  font-family:Verdana, Geneva, sans-serif;  font-size:16px;
+}
+#profileinfo{
+  background-color:#FAF9E4;
+  border-radius:0px 19px 19px 0px;
+  border: 2px solid black;
+  height: 900px;
+}
+
+#profileinfo img {
+  margin: 6px;
+  border:1px dashed black;
+}
+#profileinfo h3 {
+  width: auto;
+  text-align:center;
+  font-family:Tahoma, Geneva, sans-serif;
+  background-color:#89BFE0;
+  border-bottom: 1px solid black;
+  margin-bottom:0px;
+}
+#profside {
+  float: right;
+  width: 675px;
+}
+#profileinfo p {
+
+  margin-top:3px;
+}
+#chatform {
+  background-color: #ff4e35;
+  width:auto;
+}
+
+#chatform textarea {
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color:#FFFFCC;
+  height:63px;
+  width:550px;
+  margin-right:0px;
+  margin-bottom: 10px;
+  font-family:Verdana, Geneva, sans-serif;
+}
+#wallsposts {
+
+
+  margin-top: 10px;
+  width:550px;
+}
+#send{
+  margin-right: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left:0px;
+  height:63px;
+  float: right;
+  padding-left:19px;
+  padding-right:19px;
+}
+
+
+/*div#box1 > a {
+    display: none;
+    position:absolute;
+    margin:90px 0px 0px 120px; /* margin:top right btm left;
+    z-index:3000;
+    background: #F0F0F0;
+    border:#666 1px solid;
+    border-radius:3px;
+    padding:5px;
+    font-size:12px;
+    text-decoration:none;
+    color:#333;
+}
+div#box1:hover a {
+    display: block;
+}*/
+
+div#profile_pic_box{overflow-y:hidden;}
+div#profile_pic_box > img{z-index:2000; }
+div#profile_pic_box > a {
+  display: none;
+  position:absolute;
+  margin:140px 0px 0px 120px;
+  z-index:4000;
+  background:#D8F08E;
+  border:#81A332 1px solid;
+  border-radius:3px;
+  padding:5px;
+  font-size:12px;
+  text-decoration:none;
+  color:#60750B;
+}
+div#profile_pic_box > form{
+  display:none;
+  position:absolute;
+  z-index:3000;
+  padding:10px;
+  opacity:.8;
+  background:#F0FEC2;
+  width:180px;
+  height:180px;
+}
+div#profile_pic_box:hover a {
+  display: block;
+}
+.message {
+  width: 550px;
+  height: 42px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;;
+  background-color: #deffff;
+  border: 1px solid #ccc;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.interactContainers {
+  padding:8px;
+  background-color: #D2F0D3;
+  border: #999 1px solid;
+  display: none;
+
+}
+.interactionLinksDiv a:hover {
+  display:inline;border:#B9B9B9 1px solid;padding:5px;color:#060;font-size: 11px;background-color:#00FFFF;
+}
+/*chatbox*/
+
+
+.chatbox {
+  background-color: #89BFE0;
+  border: 1px solid #000000;
+  width: 300px;
+}
+.chatbox .main {
+  background-color: #FFFFFF;
+  height: 300px;
+  overflow: auto;
+  padding: 5px;
+}
+.chatbox .messagebox {
+  height: 32px;
+  padding: 7px 5px 5px 0px;
+  width: 290px;
+}
+
+#mewmessage {
+  font: 1em Arial;
+  height: 32px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  width: 300px;
+}
+#sendnewmsg {
+  height: 36px;
+  width: 80px;
+}
